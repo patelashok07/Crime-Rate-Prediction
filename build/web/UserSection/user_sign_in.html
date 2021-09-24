@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+   <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+
+    <title>Create a new Account</title>
+
+    <style>
+        body{
+             background-image: url("pics/home.jpg");
+        }
+        .container-fluid .card {
+            background-image: url("pics/home.jpg");  
+        }
+        
+        .divider {
+            position: relative;
+            text-align: center;
+            margin: 15px 0px;
+        }
+        
+        .divider span {
+            padding: 8px;
+            position: relative;
+            font-size: 15px;
+            z-index: 20 !important;
+        }
+        
+        .divider:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+            top: 50%;
+            left: 0;
+            z-index: 1 !important;
+        }
+           .logo {
+            width: 100%;
+            height: 50px;
+            margin-top: 1%;
+        }
+        
+        #ist {
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            margin-left: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        #iist {
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .logo img {
+            width: 70px;
+            height: 65px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- going to start signup design -->
+
+    <div class="container-fluid">
+        <div class="container-fluid">
+        <div class="logo">
+            <img src="pics/icon2.jpg"><span id="ist">INDIAN</span>&nbsp;&nbsp;
+            <span id="iist" style="color: red;">CRIME-RATE</span>&nbsp;
+            <span id="iist" style="color:red;font-size: 18px;">PREDICTION</span>
+
+        </div>
+        <div class="card bg-warning">
+            <div class="card-body mx-auto">
+                <h4 class="card-title mt-3 text-center" style="color:white;"><span style="color:red;"><i class="fa fa-user-plus" aria-hidden="true"></i></span>&nbsp;Create Account</h4>
+                <p class="text-center"style="color:white;">Start learning in best way step by step..</p>
+
+                <a href="#!" class="btn btn-block btn-danger">
+                    <i class="fab fa-google"></i> Login via Google</a>
+
+                <a href="#!" class="btn btn-block btn-primary">
+                    <i class="fab fa-facebook-f"></i> Login via Facebook</a>
+
+                <p class="divider">
+                    <span class="bg-light">OR</span>
+                </p>
+
+                <!-- form started -->
+
+                <form action="../UserAccountServlet" method="post">
+                    <!-- name field -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                  <i class="fa fa-user"></i>
+                </span>
+                        </div>
+                        <input type="text" name="user" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" />
+                    </div>
+
+                    <!-- email field -->
+
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                  <i class="fa fa-envelope"></i>
+                </span>
+                        </div>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email" />
+                    </div>
+
+                    <!-- phone field -->
+
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                  <i class="fa fa-phone"></i>
+                </span>
+                        </div>
+                        <select class="custom-select" style="max-width: 80px;">
+                <option>+91</option>
+                <option>+92</option>
+                <option>+93</option>
+              </select>
+
+                        <input type="number" name="num" class="form-control" placeholder="Enter Phone" />
+                    </div>
+                    <!--state select-->
+                      <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                 <i class="fa fa-globe" aria-hidden="true"></i>
+                </span>
+                        </div>
+                        <select name="state" class="form-control">
+                <option selected disabled>--Select User State--</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Assam">Assam</option>
+      <option value="Bihar">Bihar</option>
+      <option value="Chandigarh">Chandigarhr</option>
+      <option value="Chhattisgarh">Chhattisgarh</option>
+      <option value="Dehli">Dehli</option>
+      <option value="Goa">Goa</option>
+      <option value="Gujrat">Gujrat</option>
+      <option value="Haryana">Haryana</option>
+      <option value="Jharkhand">Jharkhand</option>
+      <option value="Kerala">Kerala</option>
+      <option value="Madhya Pradesh">Madhya Pradesh</option>
+      <option value="Maharashtra">Maharashtra</option>
+      <option value="Punjab">Punjab</option>
+      <option value="Rajasthan">Rajasthan</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Uttar Pradesh">Uttar Pradesh</option>
+              </select>
+                    </div>
+
+                    <!-- user type field -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                  <i class="fa fa-building"></i>
+                </span>
+                        </div>
+                        <select name="category" class="form-control">
+                <option selected disabled>--Select User Type--</option>
+                <option>Student</option>
+                <option>Professional</option>
+                <option>Admin</option>
+              </select>
+                    </div>
+
+                    <!-- password field -->
+
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                  <i class="fa fa-lock"></i>
+                </span>
+                        </div>
+                        <input type="password" name="pass1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Password" />
+                    </div>
+
+                    <!-- repeat password field -->
+
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                  <i class="fa fa-unlock"></i>
+                </span>
+                        </div>
+                        <input type="password" name="pass2" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Repeat Password" />
+                    </div>
+
+                    <input type="submit" class="btn btn-block btn-success" value="Create">
+
+
+                    <p class="text-center mt-3">
+                        <strong><span style="color:white; font-size: 22px">Have an account?&nbsp;&nbsp;<button class="btn  btn-success btn-lg"> <a href="user_sign_up.html" class="text-white">Log In</a></button></span></strong>
+                    </p>
+                </form>
+
+                <!-- end of form -->
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

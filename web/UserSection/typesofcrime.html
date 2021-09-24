@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Types Of Crimes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+               *{
+                 margin: 0px;
+                 padding: 0px;
+                 box-sizing: border-box;
+                 
+             }
+        body {
+            background-image: url("pics/home3.png");
+           
+          
+             font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .logo {
+            width: 100%;
+            height: 50px;
+            margin-top: 1%;
+        }
+        
+        #ist {
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            margin-left: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        #iist {
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .logo img {
+            width: 70px;
+            height: 65px;
+            border-radius: 30px;
+        }  
+        .navbar .collapse ul li {
+            margin: 2px;
+            padding: 10px;
+        }
+        
+        .navbar .collapse a {
+            font-weight: 500;
+            font-size: 15px;
+            margin: 5px;
+            padding: 10px;
+            color: white;
+        }
+        
+        .navbar .collapse a:hover {
+            transition: 0.5s ease-out;
+            color: black;
+            background-color: whitesmoke;
+           
+            text-shadow: hotpink;
+        }
+        nav{
+            margin-top: 3%;
+            height: 50px;
+            background-color: rgba(0,0,0,0.6);
+           box-shadow: gray 3px 4px;
+        }
+        nav #inp{
+       margin-top: 1.5%;
+      position: relative;
+     
+      left:15%;
+       
+
+        }
+        .tab {
+            border-radius: 5px;
+            background-color:rgba(0,0,0,0.9);
+            padding: 10px;
+            margin-top: 4%;
+            width: 95%;
+         
+            
+        }
+        label{
+            color: white
+        }
+        tr,th,td{
+           
+            border: ridge 4px black;
+            
+        }
+        tr:nth-child(1){
+            
+        }
+        h2{
+            color: white;
+            text-align:center;
+            font-family:serif;
+        }
+       
+        
+        
+        </style>
+    </head>
+    
+    <body>
+       <div class="container-fluid">
+        <div class="logo">
+            <img src="pics/icon2.jpg"><span id="ist">INDIAN</span>&nbsp;&nbsp;
+            <span id="iist" style="color: red;">CRIME-RATE</span>&nbsp;
+            <span id="iist" style="color:red;font-size: 18px;">PREDICTION</span>
+
+        </div>
+       </div>
+         <nav class="navbar navbar-expand-lg  ">
+        <a class="navbar-brand" href="#" style="margin-left:-4%;"><span style="color:black">INDIAN</span><span style="color:red">Crime</span><span style="color:skyblue;">Investigation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="color:white;"class="navbar-toggler-icon">+</span>
+        </button>
+         
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:3%">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="userSection.jsp"><i class="fa fa-home fa-1x" aria-hidden="true" style="color:red"></i>&nbsp;&nbsp;HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="addfir.jsp" ><i class="fa fa-address-card" style="color:red"></i>&nbsp;&nbsp;ADD NEW FIR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pro.jsp"><i class="fa fa-puzzle-piece" aria-hidden="true" style="color:red"></i>&nbsp;&nbsp;ALLOTED OFFICER</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="help.html" style="color: black;
+            background-color: whitesmoke;text-shadow: hotpink;"><i class="fa fa-pie-chart" aria-hidden="true" style="color:red"></i>&nbsp;&nbsp;&nbsp;&nbsp;TYPES OF CRIMES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="viewfir.jsp"><i class="fa fa-list" aria-hidden="true"style="color:red"></i>&nbsp;&nbsp;VIEW ALL FIR</a>
+                </li>
+               
+                 <li class="nav-item myname" style="float:rigth;position: absolute;right: 10px">
+               <a class="nav-link" href="#"  data-toggle="modal" data-target="#myModal"></a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+     
+  <div class="container-fluid tab">
+      <h2> Top &nbsp; Crime & Criminals...</h2>
+<div class="table-responsive">         
+  <table class="table table-dark table-striped">
+      <thead>
+        <tr style="color:yellow;text-align: center;">
+        <th>CRIME TYPE</th>
+        <th>DEFINITION</th>
+        <th>CRIMINAL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Abduction</th>
+        <td>Taking someone away by force, demanding money for their safe return</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <th>Arson</th>
+        <td>Setting fire to a building, cars or property on purpose</td>
+        <td>Arsonist</td>
+      </tr>
+      <tr>
+        <th>Assassination</th>
+        <td>Killing a famous person or public figure</td>
+        <td>Assassin</td>
+      </tr>
+      <tr>
+        <th>Blackmail</th>
+        <td>Threatening to reveal someone’s secrets if a lot of money is not paid</td>
+        <td>Blackmailer*</td>
+      </tr>
+      <tr>
+        <th>Bombing</th>
+        <td>	Detonating an explosive device with the plan of harming people or property</td>
+        <td>Bomber</td>
+      </tr>
+      <tr>
+        <th>Child abuse</th>
+        <td>Treating a child badly in a physical, emotional, or sexual way</td>
+        <td>Child abuser</td>
+      </tr>
+      <tr>
+        <th>Corruption</th>
+        <td>Behaving illegally and dishonestly; especially those in power</td>
+        <td>Corrupt</td>
+      </tr>
+      <tr>
+        <th>Crime</th>
+        <td>Doing something illegal that can be punished by law</td>
+        <td>Criminal</td>
+      </tr>
+      <tr>
+        <th>Domestic violence</th>
+        <td>Behaving violently inside the home</td>
+        <td>Attact</td>
+      </tr>
+      <tr>
+        <th>Drunk driving</th>
+        <td>Driving with too much alcohol in your blood</td>
+        <td>Drunk driver</td>
+      </tr>
+      <tr>
+        <th>Hooliganism</th>
+        <td>Being violent or aggressive on purpose; often used to describe youth</td>
+        <td>Hooligan</td>
+      </tr>
+      <tr>
+        <th>Kidnapping</th>
+        <td>	Taking someone away by force, often demanding money for their safe return</td>
+        <td>kidnapper</td>
+      </tr>
+      <tr>
+        <th>Murder</th>
+        <td>Killing someone on purpose</td>
+        <td>Murderer</td>
+      </tr>
+      <tr>
+        <th>Mugging</th>
+        <td>Attacking someone with a plan to rob them</td>
+        <td>Mugger</td>
+      </tr>
+       <tr>
+        <th>Pickpocketing</th>
+        <td>Stealing wallets, money, etc. from people’s pockets in crowded places</td>
+        <td>Pickpocketer</td>
+      </tr>
+       <tr>
+        <th>Rape</th>
+        <td>	Forcing someone to have sex</td>
+        <td>Rapist</td>
+      </tr>
+       <tr>
+        <th>Robbery</th>
+        <td>Stealing large amounts of money with force or violence from a bank, store, etc.</td>
+        <td>Robber</td>
+      </tr>
+       <tr>
+        <th>Terrorism</th>
+        <td>Using violence, threats, or fear, usually for political purposes</td>
+        <td>Terrorist</td>
+      </tr>
+       <tr>
+        <th>Theft</th>
+        <td>Stealing, in general</td>
+        <td>Thief</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+   
+       
+    </body>
+</html>
